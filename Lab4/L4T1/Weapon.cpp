@@ -15,6 +15,33 @@ Weapon::~Weapon()
 {
 }
 
+string Weapon::getName()
+{
+    return this->name;
+}
+
+float Weapon::getDamage()
+{
+    return this->damage;
+}
+
+float Weapon::getWeight()
+{
+    return this->weight;
+}
+
+int Weapon::getmaxWeight()
+{
+    return this->maxWeight;
+}
+
+void Weapon::setDamage(float damage)
+{
+    if (damage > this->damage) this->damage = this->damage;
+    else if (damage < 0) cout << "Вы ввели отрицательное число!" << endl;
+    else this->damage=damage;
+}
+
 bool Weapon::getMaxWeight()
 {
     if (maxWeight > weight)
