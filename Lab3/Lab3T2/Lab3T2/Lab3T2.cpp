@@ -41,9 +41,9 @@ int main()
     int a = 3;
     int b = 5;
     int ft = fun('+')(a,b);
-   
     cout << ft << endl;
-    cout << "Если '-': " << endl;
+    int ft1 = fun('-')(a, b);
+    cout << ft1 << endl;
 
 
     float* pc1 = new float(12.5);
