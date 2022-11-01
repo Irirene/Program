@@ -21,12 +21,12 @@ int sub(int a, int b) {
     return a - b;
 }
 
-int fun(char a, int x, int y)
+int (*fun(char k))(int, int)
 {
-    if (a == '+')
-        return sum(x, y);
-    if (a == '-')
-        return sub(x, y);
+    if (k == '+')
+        return sum;
+    if (k == '-')
+        return sub;
 }
 
 int main()
@@ -38,9 +38,12 @@ int main()
     cout << "Сумма элементов массива = ";
     cout << printArr(begin, end) << endl;
 
-
-    cout << "Если '+': " << fun('+', 12, 9) << endl;
-    cout << "Если '-': " << fun('-', 58, 7) << endl;
+    int a = 3;
+    int b = 5;
+    int ft = fun('+')(a,b);
+   
+    cout << ft << endl;
+    cout << "Если '-': " << endl;
 
 
     float* pc1 = new float(12.5);

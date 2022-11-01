@@ -26,8 +26,8 @@ public:
         void setDamage(float damage);
 
         bool getMaxWeight();
-        int sumWeight(Weapon* a);
-        //перегрузка
         int sumWeight(float weight);
+        //перегрузка
+        int sumWeight();
 };
 
