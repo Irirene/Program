@@ -46,8 +46,8 @@ int main()
     MagicWeapon s("Bow", 7, 6, 7, Types::TWOHANDED, 5);
     cout <<"Дополнительный урон: " << s.plusDamage() << endl;
 
-    Weapon v("", 1, 2, 3, Types::ONEHANDED);
-    Weapon j("", 7, 4, 2, Types::ONEHANDED);
+    Weapon v("Spear", 1, 2, 3, Types::ONEHANDED);
+    Weapon j("Bolo", 7, 4, 2, Types::ONEHANDED);
     cout << (v>j) << endl;
     cout << (v<j) << endl;
 }
