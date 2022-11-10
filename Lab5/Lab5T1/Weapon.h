@@ -10,30 +10,34 @@ enum class Types
     BOW,
     CROSSBOW
 };
+
+
 class Weapon
 {
-
-    string name;
-    float damage;
-    float weight;
-    int maxWeight;
-    Types d;
-
 public:
     Weapon();
 
-    Weapon(string name, float damage, float weight, int maxWeight, Types d);
+    Weapon(string name, int damage, int weight, int maxWeight, Types d);
 
     ~Weapon();
 
     string getName();
-    float getDamage();
-    float getWeight();
+    int getDamage();
+    int getWeight();
     int getmaxWeight();
     Types getd();
 
-    void setDamage(float damage);
+    void setDamage(int damage);
 
     bool getMaxWeight();
     int sumWeight(Weapon* a);
+
+    virtual int plusDamage();
+
+protected:
+    string name;
+    int damage;
+    int weight;
+    int maxWeight;
+    Types d;
 };

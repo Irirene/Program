@@ -10,7 +10,7 @@ Weapon::Weapon()
     this->d = d;
 }
 
-Weapon::Weapon(string name, float damage, float weight, int maxWeight, Types d) :name(name), damage(damage), weight(weight), maxWeight(maxWeight), d(d) {};
+Weapon::Weapon(string name, int damage, int weight, int maxWeight, Types d) :name(name), damage(damage), weight(weight), maxWeight(maxWeight), d(d) {};
 
 
 Weapon::~Weapon()
@@ -22,12 +22,12 @@ string Weapon::getName()
     return this->name;
 }
 
-float Weapon::getDamage()
+int Weapon::getDamage()
 {
     return this->damage;
 }
 
-float Weapon::getWeight()
+int Weapon::getWeight()
 {
     return this->weight;
 }
@@ -42,7 +42,7 @@ Types Weapon::getd()
     return this->d;
 }
 
-void Weapon::setDamage(float damage)
+void Weapon::setDamage(int damage)
 {
     if (damage > this->damage) this->damage = this->damage;
     else if (damage < 0) cout << "Вы ввели отрицательное число!" << endl;
@@ -62,6 +62,12 @@ int Weapon::sumWeight(Weapon* a)
 {
     return a->weight + weight;
 }
+
+int Weapon::plusDamage()
+{
+    return damage;
+}
+
 
 
 
