@@ -16,7 +16,7 @@ struct Gamer
     }
 };
 
-bool operator > (Weapon a, Weapon b);
+/*bool operator > (Weapon a, Weapon b);
 bool operator > (Weapon a, Weapon b);
 
 bool operator > (Weapon a, Weapon b)
@@ -26,7 +26,7 @@ bool operator > (Weapon a, Weapon b)
 bool operator < (Weapon a, Weapon b)
 {
     return a.getDamage() < b.getDamage();
-}
+}*/
 
 int main()
 {
@@ -46,8 +46,14 @@ int main()
     MagicWeapon s("Bow", 7, 6, 7, Types::TWOHANDED, 5);
     cout <<"Дополнительный урон: " << s.plusDamage() << endl;
 
-    Weapon v("Spear", 1, 2, 3, Types::ONEHANDED);
+    /*Weapon v("Spear", 1, 2, 3, Types::ONEHANDED);
     Weapon j("Bolo", 7, 4, 2, Types::ONEHANDED);
     cout << (v>j) << endl;
-    cout << (v<j) << endl;
+    cout << (v<j) << endl;*/
+
+    MagicWeapon r("Saber", 7, 6, 7, Types::TWOHANDED, 5);
+    MagicWeapon g("Grenade", 7, 6, 7, Types::TWOHANDED, 5);
+    r.attack();
+    g.attack();
+
 }

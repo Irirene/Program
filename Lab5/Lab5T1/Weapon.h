@@ -33,6 +33,7 @@ public:
     int sumWeight(Weapon* a);
 
     virtual int plusDamage();
+    virtual void attack()=0;
 
 protected:
     string name;

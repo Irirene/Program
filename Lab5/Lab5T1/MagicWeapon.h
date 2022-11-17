@@ -10,5 +10,7 @@ public:
     int getmoreDamage();
 
     int plusDamage() override;
+
+    void attack() override;
 };
 

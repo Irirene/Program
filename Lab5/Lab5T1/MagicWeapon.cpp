@@ -16,4 +16,9 @@ int MagicWeapon::plusDamage()
     return Weapon::getDamage() + moreDamage;
 }
 
+void MagicWeapon::attack()
+{
+    cout << "Атакуем магическим оружием " << this->name<< endl;
+}
+
 
