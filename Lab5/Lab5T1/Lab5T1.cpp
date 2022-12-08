@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "Weapon.h"
 #include "MagicWeapon.h"
+#include "OneOffWepon.h"
 using namespace std;
 
 
@@ -55,5 +56,10 @@ int main()
     MagicWeapon g("Grenade", 7, 6, 7, Types::TWOHANDED, 5);
     r.attack();
     g.attack();
+
+    OneOffWepon j("Gun", 8, 3, 7, Types::TWOHANDED);
+    cout << j.getDamage() << endl;
+    j.attack();
+    j.attack();
 
 }
