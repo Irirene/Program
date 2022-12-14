@@ -62,4 +62,7 @@ int main()
     j.attack();
     j.attack();
 
+    HandedWeapons<MagicWeapon> handedWeaponsMagicWeapon(j);
+    HandedWeapons<OneOffWepon> handedWeaponsOneOffWepon(r);
+
 }
